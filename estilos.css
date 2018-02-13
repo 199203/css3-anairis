@@ -1,0 +1,188 @@
+header{
+  background-color: #5b7989;
+  border-top-left-radius: 10px;
+  -moz-border-top-left-radius: 10px;
+  -webkit-border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  -moz-border-top-right-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  padding: 10px;
+  height: 130px;
+  float: center;
+  margin: 0 auto;
+  text-align: center;
+  animation: Mianimacion 3s;
+  }
+.titulo{
+color: white;
+text-align: left;
+text-shadow: 2px #02010a;
+margin: 10px;
+}
+.menu a[href]{
+text-decoration: underline;
+color: white;
+}
+body{
+  font-family: 'Dancing Script', cursive;
+  font-size: 16px;
+  width: 100%;
+  background-color: #02010a;
+}
+footer{
+  background-color: #c6d5c5;
+  display: flex;
+  flex-flow: nowrap;
+  border-radius: 0 0 10px 10px;
+  -moz-border-radius: 0 0 10px 10px;
+  -webkit-border-radius: 0 0 10px 10px;
+  float: center;
+  margin: 0 auto;
+  text-align: center;
+  flex-basis: 5;
+}
+footer .primero{
+  order: 1;
+  margin: 5px 20px;
+}
+footer .segundo{
+  order: 2;
+  margin: 5px 20px;
+}
+footer .tercero{
+ order: 3;
+ margin: 5px 20px;
+}
+footer .cuarto{
+ order: 4;
+ margin: 5px 20px;
+}
+footer .tercero img{
+ height: 9%;
+}
+#contenido{
+  width: 900px;
+  float: center;
+  text-align: center;
+  margin: 0 auto;
+}
+.menu ol{
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  margin-top: 6px;
+}
+.menu ol li{
+  padding: 4px;
+}
+.menu{
+  text-align: right;
+  position: relative;
+  right: 15px;
+  bottom: 15px;
+  float: right;
+}
+@media (min-width: 320px) and (max-width: 420px){
+  header{
+    height: 160px;
+  }
+  .titulo{
+  text-align: center;
+  margin: 0 auto;
+  float: center;
+  color: white;
+  text-shadow: 2px #02010a;
+  }
+  .menu a[href]{
+  text-decoration: underline;
+  color: white;
+  }
+  .menu{
+    position: relative;
+    right: 80px;
+    float: center;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    right: 65px;
+    top: 5px;
+  }
+  .tercero img{
+    width: 9%;
+  }
+  #contenido{
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+    float: center;
+    position: relative;
+    right: 10px;
+  }
+  footer{
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    margin: 0 auto;
+    float: center;
+  }
+}
+@media (min-width: 420px) and (max-width: 720px){
+  header{
+    height: 160px;
+  }
+    .menu{
+    float: center;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    right: 120px;
+    top: 20px;
+    }
+    .titulo{
+    text-align: center;
+    margin: 0 auto;
+    float: center;
+    color: white;
+    text-shadow: 2px #02010a;
+    }
+    .menu a[href]{
+    text-decoration: underline;
+    color: white;
+    }
+    .tercero img{
+      width: 9%;
+    }
+    #contenido{
+      width: 410px;
+      text-align: center;
+      margin: 0 auto;
+      float: center;
+      position: relative;
+      right: 10px;
+    }
+    footer{
+      display: flex;
+      flex-direction: column;
+    }
+}
+@media (min-width: 620px) and (max-width: 720px){
+  #conteido{
+    width: 610px;
+  }
+}
+@media (min-width: 720px){
+  #contenido{
+    width: 900px;
+  }
+}
+@-webkit-keyframes Mianimacion{
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
+}

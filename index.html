@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0"/>
+  <title>Galería</title>
+  <link rel="stylesheet" href="estilos.css">
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+  <style>
+  .principal{
+    background-color: #82c3a6;
+    text-align: center;
+    margin: 0 auto;
+    float: center;
+    padding: 25px;
+  }
+  .principal img{
+  float: center;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  width: 80%;
+  box-shadow: 2px 2px 2px #02010a;
+  }
+  .imagenes{
+    display: flex;
+    flex-flow: nowrap;
+    background-color: #d5c75f;
+    border: 1px;
+    text-align: center;
+    margin: 0 auto;
+    float: center;
+    padding: 15px;
+  }
+  .secundaria-paisajes img{
+    order: 1;
+    width: 75%;
+    height: 80%;
+    box-shadow: 2px 2px 2px #02010a;
+    border: 2px;
+    }
+  .secundaria-paisajes img:hover{
+    transform: rotate(10deg);
+    box-shadow: 2px 2px 2px #82c3a6;
+    border: 2px;
+  }
+  .secundaria-retratos img{
+    order: 2;
+    width: 95%;
+    height: 95%;
+    box-shadow: 2px 2px 2px #02010a;
+    border: 2px;
+  }
+  .secundaria-retratos img:hover{
+    transform: translate(20px,-5px);
+    box-shadow: 2px 2px 2px #82c3a6;
+    border: 2px;
+  }
+  .secundaria-paisajes{
+    order: 1;
+  }
+  .secundaria-retratos{
+    order: 2;
+  }
+  .secundaria-retratos figcaption a{
+    text-align: center;
+    margin: 0 auto;
+    float: center;
+    color: black;
+  }
+  .secundaria-paisajes figcaption a{
+    text-align: center;
+    margin: 0 auto;
+    float: center;
+    color: black;
+  }
+  .cuarto p img{
+    width: 5%;
+    height: 5%;
+  }
+  @media (min-width: 320px) and (max-width: 640px){
+    .imagenes{
+      display: flex;
+      flex-direction: column;
+    }
+    .secundaria-paisajes img{
+      width: 95%;
+    }
+    .secundaria-retratos img{
+      width: 95%;
+    }
+    .principal img{
+      width: 75%;
+    }
+  }
+  @media (min-width: 640px) and (max-width: 720px){
+    .imagenes{
+      display: flex;
+      flex-direction: column;
+    }
+    .secundaria-paisajes img{
+      width: 95%;
+    }
+    .secundaria-retratos img{
+      width: 95%;
+      height: 95%;
+    }
+  }
+  @media (min-width: 720px){
+    .secundaria-retratos img{
+      width: 95%;
+      height: 95%;
+    }
+    .imagenes{
+      display: flex;
+      flex-flow: nowrap;
+    }
+  }
+</style>
+</head>
+<body>
+  <div id="contenido">
+  <header>
+    <div class="titulo">
+    <h1>Comenzando con la fotografía</h1>
+  </div>
+    <nav class="menu">
+      <ol>
+       <li><a style="text-decoration: none;" href="index.html">Inicio</a></li>
+       <li><a href="paisaje.html">Paisajes</a></li>
+       <li><a href="retrato.html">Retratos</a></li>
+    </ol>
+    </nav>
+  </header>
+    <section>
+      <article class="principal">
+        <img src="img/paisaje.jpg" alt="paisaje" title="paisaje principal">
+      </article>
+      <article class="imagenes">
+        <div class="secundaria-paisajes">
+        <figure>
+          <img src="img/paisaje1.jpg" alt="paisaje1" title="paisaje1"></br>
+          <figcaption><a href="paisaje.html">Paisajes</a></figcaption>
+        </figure>
+      </div>
+      <div class="secundaria-retratos">
+        <figure>
+          <img src="img/abejita.jpg" alt="abejita" title="abeja"></br>
+          <figcaption><a href="retrato.html">Retratos</a></figcaption>
+        </figure>
+        <div>
+      </article>
+    </section>
+    <footer>
+      <div class="primero">
+        <h3>Contacto</h3>
+        <p>Ubicación: Calle jalisco número 7</p></br>
+        <p>Teléfono: 7774426571</p></br>
+        <p>Correo:</p> <a href="mailto:actriz_picisdan@hotmail.com?subject=feedback">actriz_picisdan@hotmail.com</a>
+      </div>
+      <div class="segundo">
+        <h3>Términos y condiciones</h3>
+        <p>Promoción:</br>Al contratar una sección con nuestros fotógrafos,</br> tiene gratis</br> una segunda sección</p>
+      </div>
+      <div class="tercero">
+        <h3>Redes Sociales</h3>
+        <p>También Contactanos</p></br>
+        <img src="img/facebook.png"> <a href="https://www.facebook.com">elabejero.com.mx</a>
+      </div>
+      <div class="cuarto">
+        <h3>Derechos</h3>
+      <p><img src="img/derechos.png" alt="derechos" title="derechos reservados">Derechos Reservados</br>Ana Iris Uribe Arizmendi</br> 2018</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
